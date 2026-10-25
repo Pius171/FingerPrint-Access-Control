@@ -316,7 +316,7 @@ void loop() {
             if (user.notMaster == 0 && getMasterCount() <= 1) {
               debugln("Blocked deletion of sole Master user.");
               audioWarning();
-              displayTwoWords("Cant't", "Delete", DeleteModeHeader);
+              displayTwoWords("Can't", "Delete", DeleteModeHeader);
               delay(1500);
               continue;
             }
@@ -354,7 +354,7 @@ void loop() {
               if (u.notMaster == 0 && getMasterCount() <= 1) {
                 debugln("Blocked deletion of sole Master user during name search.");
                 audioWarning();
-                displayTwoWords("Can'r", "Delete", DeleteModeHeader);
+                displayTwoWords("Can't", "Delete", DeleteModeHeader);
                 delay(1500);
                 continue;
               }
